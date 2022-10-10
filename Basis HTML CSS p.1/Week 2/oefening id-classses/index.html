@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening 1 week 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="https://www.jumper.nl/wp-content/uploads/2021/06/honden-advies-jumper.jpg" alt="Hond" id="rick">
+    <p class="info">hierboven zie je een foto van Rick</p>
+
+    <div class="flex">
+        <div class="con">
+            <img src="https://www.zooplus.nl/magazine/wp-content/uploads/2021/12/Siamese-kat-768x512.jpeg" alt="kat" id="kat">
+            <p class="tekst1">Dit is johanna</p>
+        </div>
+        <div class="con">
+            <img src="https://puurnatuur.nl/wp-content/uploads/Fries-paard-e1632404639759-1600x1075.jpg" alt="henk" id="paard">
+            <p class="tekst2">dit is henk</p>
+        </div>
+    </div>
+
+    <div class="tekstvelden-con">
+        <h2>tekstvelden</h2>
+        <label for="veld1">Veld 1</label>
+        <input type="text" name="veld1" id="veld1" class="tekstveld"><br/>
+        <label for="veld2">Veld2</label>
+        <input type="text" name="veld2" id="veld2" class="tekstveld">
+    </div>
+
+    <script>
+        /*Variabelen*/
+        //id's selecteren
+        let foto1 = document.getElementById("rick");
+        let kat = document.getElementById("kat");
+        let paard = document.getElementById("paard");
+        //class's selecteren
+        let textDiv = document.getElementsByClassName("info");
+        let velden = document.getElementsByClassName("tekstveld");
+
+        /*DOM Manipuleren*/
+        //functions maken en gebruiken
+        foto1.onclick = function(){alert("dit is Rick");}
+        kat.onclick = function(){alert("dit is een kat genaamd johanna");}
+        paard.onclick = function(){alert("dit is henk");}
+
+        // events gebruiken 
+        textDiv[0].onmouseover = function(){console.log("muis over de tekst");};
+        velden[0].onmouseover = function(){console.log("muis staat nu op een tekstveld")};
+    </script>
+</body>
+</html>

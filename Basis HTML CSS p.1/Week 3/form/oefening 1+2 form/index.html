@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Form website oefening 1+2</Title>
+    </head>
+    <body>
+        <form action="form.txt" target="_blank">
+            <label for="first-name">First name(max 10 char):</label>
+            <input type="text" id="first-name" name="first-name" maxlength="10" required><br/>
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name" size="30" required><br/>
+            <label for="last-name">Password:</label>
+            <input type="password" id="password" name="password" size="30" required>
+
+            <p>Choose your favorite Web language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML" disabled>
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br/>
+
+            <p>Checklist:</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br/>
+
+            <label for="points">Punten: </label>
+            <input type="number" step="2" required><br/>
+            <hr>
+            <select name="klas" id="klassen">
+                <option value="geen-klas">Geen klas</option>
+                <option value="D1B1">D1B1</option>
+                <option value="D1B2">D1B2</option>
+            </select><br/> 
+            <hr>
+            <input type="file"></form><br/>
+
+            <input type="Submit" value="OK">
+    </body>
+</html>

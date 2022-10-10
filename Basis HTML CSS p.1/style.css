@@ -1,0 +1,93 @@
+body {
+    color: white;
+}
+
+header, footer {
+    background-color: #56bfa5;
+    color: white;
+    padding: 0.3rem 0;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3 {
+    color: white;
+    margin: 0 0 5px 0;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.week1, .week2, .week3 {
+    background-color: #56bfa5;
+    border: 2px solid black;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+table, table tr, table td {
+    border: 2px solid black;
+    padding: 4px;
+}
+
+table a {
+    color: white;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: black;
+}
+
+table {
+    height: 100%;
+    background-color: #38947d;
+}
+
+.con .img-bg-w1 {
+    background-image: url("Media/week-1.png");
+    background-size: cover;
+    height: 25vh;
+    width: 50vh;
+    display: flex;
+    align-items: flex-end;
+    outline: 2px solid white;
+}
+
+.con .img-bg-w2 {
+    background-image: url("Media/week-2.png");
+    background-size: cover;
+    height: 25vh;
+    width: 50vh;
+    display: flex;
+    align-items: flex-end;
+    outline: 2px solid white;
+}
+
+.img-bg-w1 p,
+.img-bg-w2 p,
+.img-bg-w3 p {
+    margin: 0;
+    padding: 0;
+    background-color: #38947d;
+    color: white;
+    padding: 0.2em 0.2em;
+    width: 100%;
+    outline: 2px solid white;
+}
+
+.con .img-bg-w3 {
+    background-image: url("Media/week-3.png");
+    background-size: cover;
+    height: 25vh;
+    width: 50vh;
+    display: flex;
+    align-items: flex-end;
+    outline: 2px solid white;
+}

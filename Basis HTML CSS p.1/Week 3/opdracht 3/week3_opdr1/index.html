@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM opdracht 3C</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="con-form">
+            <h1>FORM Opdracht 3</h1>
+            <form action="https://bijlsma.ict-lab.nl/basis1b/form_verwerk.php" method="post" name="formulier">
+                <table>
+                    <tr>
+                        <td><label for="naam">Naam: </label></td>
+                        <td><input type="text" name="naam" id="naam" maxlength="18"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="achternaam">Achternaam: </label></td>
+                        <td><input type="text" name="achternaam" id="achternaam"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="wachtwoord">Wachtwoord: </label></td>
+                        <td><input type="password" name="wachtwoord" id="wachtwoord"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="leeftijd">Leeftijd: </label></td>
+                        <td><input type="number" name="leeftijd" id="leeftijd" min="12" value="12"></tr>
+                    </tr>
+                    <tr>
+                        <td><label for="favoriete-kleur">Favoriete kleur: </label></td>
+                        <td><input type="color" name="favoriete-kleur" id="color-input"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>favoriete OS</p>
+                        </td>
+                        <td>
+                            <label for="macOS">MacOS</label>
+                            <input type="radio" name="macOS" id="macOS" value="macOS" disabled><br/>
+                            <label for="windows">Windows</label>
+                            <input type="radio" name="Windows" id="windows" value="Windows" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="verzenden">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Verzenden van form naar javascript| oefening</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+
+        <form id="pure-form">
+
+            <label for="name">Naam: </label>
+            <input id="name" name="name" type="text">
+
+            <label for="name">Achternaam: </label>
+            <input id="last-name" name="achternaam" type="text">
+
+            <button type="submit">Send</button>
+
+        </form>
+
+        <p id="voornaam"></p>
+        <p id="achternaam"></p>
+
+        <p style="display: none;" id="info">check console voor meer informatie</p>
+
+        <script>
+            let infoTekst = document.getElementById("info");
+            let nameInput = document.getElementById('name');
+            let lastInput = document.getElementById('last-name');
+
+            let naamVakVoornaam = document.getElementById("voornaam");
+            let naamVakAchternaam = document.getElementById("achternaam");
+
+            const formInputs = document.getElementById('pure-form') 
+            
+            formInputs.addEventListener('submit', function(evenement) {
+
+            evenement.preventDefault();
+
+            naamVakVoornaam.innerHTML = nameInput.value;
+            naamVakAchternaam.innerHTML = lastInput.value;
+            console.log("Voornaam: " + nameInput.value + ", Achternaam: " + lastInput.value);
+
+            infoTekst.style.display = "block";
+            });
+        </script>
+    </body>
+</html>

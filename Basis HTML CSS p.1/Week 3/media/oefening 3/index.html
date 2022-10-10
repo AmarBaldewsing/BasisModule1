@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>video toevoegen</title>
+    </head>
+    <body>
+        <h1>Video</h1>
+
+        <p>autoplay video(niet gesupport) =</p>
+        <video autoplay>
+            <source src="video-weno.mp4">
+        </video>
+
+        <p>video met controls</p>
+        <video controls>
+            <source src="video-weno.mp4">
+        </video>
+
+        <p>play video with button</p>
+        <video id="video-afspelen">
+            <source src="video-weno.mp4">
+        </video>
+        <button onclick="videoPlay()">play video</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

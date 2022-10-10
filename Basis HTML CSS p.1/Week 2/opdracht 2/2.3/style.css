@@ -1,0 +1,59 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cad2c5;
+}
+
+img {border: 2px solid black;}
+
+header {
+    background-color: #2f3e46;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px;
+    outline: 2px solid white;
+}
+
+header h1 {
+    flex: 2;
+    text-align: center;
+}
+
+main {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+main div {
+    border: 2px solid white;
+    margin: 0.5rem 0;
+}
+
+
+
+main h1, main img {margin: 21px 0 21px 0.4rem;}
+
+.opleiding {background-color: #52796f;}
+.hobbys {
+    background-color: #84a98c;
+    margin: 0.5rem;
+}
+.toekomst {background-color: #52796f;}
+
+footer {
+    height: 10vh;
+    background-color: #2f3e46;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {padding: 0 1rem; color: #fff;}

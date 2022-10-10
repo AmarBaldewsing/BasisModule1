@@ -1,0 +1,100 @@
+body {
+    min-height: 100vh;
+    background-image: url("media/lucht.avif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.con-header {
+    background-color: hsla(195, 84%, 59%, 0.8);
+    text-align: center;
+    border: 2px solid white;
+}
+
+.con-header h1, .con-video h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem 0;
+}
+
+.con-foto {
+    min-height: 25vh;
+    background-color: hsla(195, 84%, 59%, 0.8);
+    border: 2px solid white;
+    margin-top: 15px;
+}
+
+.con-foto .con-flex {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.con-foto .foto1, 
+.con-foto .foto2 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+}
+
+.con-foto .foto1 {
+    background-image: url("media/meeuw1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.con-foto .foto2 {
+    width: 500px;
+    height: 500px;
+    background-image: url("media/meeuw2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.con-foto p {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.con-video {
+    max-width: 70%;
+    margin-inline: auto;
+    margin-top: 15px;
+    background-color: hsla(195, 84%, 59%, 0.8);
+    border: 2px solid white;
+    text-align: center;
+}
+
+.con-video .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.con-tekst {
+    max-width: 40%;
+    margin-inline: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    background-color: hsla(195, 84%, 59%, 0.8);
+    border: 2px solid white;
+}
+
+.con-tekst p {
+    text-align: left;
+    max-width: 40ch;
+    margin-inline: auto;
+}
+
+@media (max-width: 1050px) {
+    .con-foto .con-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Oefening 2 media toevoegen</title>
+    </head>
+    <body>
+        <h1>Audio</h1>
+
+        <p>autoplay(werkt niet) =</p>
+        <audio autoplay controls>
+            <source src="song.mp3">
+        </audio>
+
+        <p>hide controls =</p>
+        <audio id="no-controls">
+            <source src="song.mp3">
+        </audio>
+
+        <button onclick="afspelen()">Speel audio van no controls</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+.info {
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#rick {
+    float: left;
+    margin: 5px 10px;
+    width: 20%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.con {
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+.con .tekst1, .tekst2 {text-align: center;}
+.con img {max-width: 100%;}
+
+.tekst1 {background-color: red; color: wheat;}
+.tekst2 {background-color: blue; color: wheat;}
+
+.tekstvelden-con {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tekstveld {
+    width: 250px;
+    margin: 1rem;
+    border: 2px solid green;
+    border-radius: 10px;
+}
